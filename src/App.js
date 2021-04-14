@@ -1,25 +1,40 @@
 import logo from './logo.svg';
 import './App.css';
+import{
+  BrowserRouter as Router,
+  Switch,
+  Route, 
+  Link, 
+  useParams
+}from "react-router-dom";
+import BlogPost from './Container/Blogpost';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+// export default function GoForIt(){
+//   return(
+//     <Router>
+//       <div>
+//         <ul>
+//           <li>
+//           <Link to="/practice">Week9</Link>
+//           </li>
+//           <li>
+//             <Link to="/task">Task</Link>
+//           </li>
+//         </ul>
+//         <hr/>
+//         <Switch>
+//           <Route exact path="/"><Practice/> </Route>
+//           <Route path="/task"><Task/></Route>
+//       </Switch>
+//       </div>
+//     </Router>
+//   );
+// }
 
-export default App;
+// function Practice(){
+//   return(
+//     <div>
+//       <BlogPost/>
+//     </div>
+//   )
+// }
